@@ -1,0 +1,22 @@
+.section-title {
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-menu, sans-serif);
+    font-size: var(--text-size-section, 32px);
+    font-weight: var(--text-weight-bold, 700);
+
+    line-height: var(--text-line-height-section, 36px);
+
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .section-title {
+        margin-bottom: 25px;
+
+        font-size: var(--text-size-section_mobile, 30px);
+        line-height: var(--text-line-height-section_mobile, 33px);
+    }
+}
