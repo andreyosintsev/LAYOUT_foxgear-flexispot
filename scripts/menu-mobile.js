@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return console.warn('DOM: element ".menu-mobile" not found');
     }
 
-    const menuMobileButton = document.querySelector('.menu-mobile-button');
+    const menuMobileButton = document.querySelector('.button-menu-mobile');
 
     if (!menuMobileButton) {
-        return console.warn('DOM: element ".menu-mobile-button" not found');
+        return console.warn('DOM: element ".button-menu-mobile" not found');
     }
 
     const body = document.querySelector('body');
@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLinks.forEach(link => link.addEventListener('click', hideMenuMobile));
 
     function showMenuMobile() {
-        menuMobileButton.classList.add('menu-mobile-button_active');
+        menuMobileButton.classList.add('button-menu-mobile_active');
         menuMobile.classList.remove('transparent');
         body.classList.add('noscroll');
     }
 
     function hideMenuMobile() {
-        menuMobileButton.classList.remove('menu-mobile-button_active');
+        menuMobileButton.classList.remove('button-menu-mobile_active');
         menuMobile.classList.add('transparent');
         body.classList.remove('noscroll');
     }

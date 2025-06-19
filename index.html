@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/common/consts.css">
     <link rel="stylesheet" href="css/common/typography.css">
 
+    <link rel="stylesheet" href="blocks/logo/css/logo.css">
+    <link rel="stylesheet" href="blocks/menu-main/css/menu-main.css">
+    <link rel="stylesheet" href="blocks/button-menu-mobile/css/button-menu-mobile.css">
     <link rel="stylesheet" href="blocks/header/css/header.css">
     <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css">
     <link rel="stylesheet" href="blocks/rating/css/rating.css">
@@ -35,75 +38,54 @@
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
     <link rel="stylesheet" href="blocks/popup/css/popup.css">
-    <link rel="stylesheet" href="css/pages/halo65-he.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
             <div class="logo header__logo">
-                <a class="logo__link" href="index.html" title="Клавиатуры NuPhy - главная страница">
-                    <img class="logo__image" 
-                        src="images/logo/logo.webp" 
-                        alt="Логотип NuPhy">
+                <a class="logo__link" href="#" title="Столы FoxGear LIFTISH - главная страница">
+                    <img class="logo__image" src="blocks/logo/images/logo.png" alt="Логотип FoxGear">
                 </a>
             </div>
             <nav class="menu-main header__menu-main">
                 <ul class="menu-main__items">
-                    <li class="menu-main__item hidden">
-                        <a class="menu-main__link" href="keyboards.html" title="Клавиатуры NuPhy">
-                            Клавиатуры
-                        </a>
-                    </li>
-                    <li class="menu-main__item menu-main__item_dropdown">
-                        <a class="menu-main__link" href="keyboards-he.html" title="Клавиатуры HE">
-                            Клавиатуры с магнитными переключателями
-                        </a>
-                        <div class="menu-dropdown hidden">
-                            <ul class="menu-dropdown__items">
-                                <li class="menu-dropdown__item">
-                                    <a class="menu-dropdown__link" href="halo65-he.html" title="Клавиатура NuPhy Halo65 HE">
-                                        Клавиатура NuPhy Halo65 HE
-                                    </a>
-                                </li>
-                                <li class="menu-dropdown__item">
-                                    <a class="menu-dropdown__link" href="air60-he.html" title="Клавиатура NuPhy Air60 HE">
-                                        Клавиатура NuPhy Air60 HE
-                                    </a>
-                                </li>
-                                <li class="menu-dropdown__item">
-                                    <a class="menu-dropdown__link" href="air75-he.html" title="Клавиатура NuPhy Air75 HE">
-                                        Клавиатура NuPhy Air75 HE
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="keycaps.html" title="Кейкапы">
-                            Кейкапы
-                        </a>
-                    </li>
-                    <li class="menu-main__item hidden">
-                        <a class="menu-main__link" href="index.html#reviews" title="О нас пишут">
-                            О нас
+                        <a class="menu-main__link" href="#description" title="Презентация столов FoxGear LIFTISH">
+                            Столы FoxGear LIFTISH
                         </a>
                     </li>
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="index.html#contacts" title="Контакты">
+                        <a class="menu-main__link" href="#specs" title="Технические характеристики столов">
+                            Технические характеристики
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#photos" title="Фотографии столов">
+                            Фотографии
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#reviews" title="Отзывы о столах LIFTISH">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#contacts" title="Контакты FoxGear" target="_blank" rel="noopener">
                             Контакты
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="menu-mobile-button">
+            <div class="button-menu-mobile header__button-menu-mobile">
                 <svg aria-hidden="true" 
                     focusable="false" 
                     role="presentation" 
-                    class="menu-mobile-button__icon" 
+                    class="button-menu-mobile__icon" 
                     viewBox="0 0 64 64">
-                    <path class="menu-mobile-button__icon-line1" d="M7 15h51"></path>
-                    <path class="menu-mobile-button__icon-line2" d="M7 32h43"></path>
-                    <path class="menu-mobile-button__icon-line3" d="M7 49h51"></path>
+                    <path class="button-menu-mobile__icon-line1" d="M7 15h51">.</path>
+                    <path class="button-menu-mobile__icon-line2" d="M7 32h43">.</path>
+                    <path class="button-menu-mobile__icon-line3" d="M7 49h51">.</path>
                 </svg>
             </div>
         </div>
@@ -111,65 +93,50 @@
     <div class="menu-mobile transparent">
         <div class="menu-mobile__content">
             <ul class="menu-mobile__items">
-                <li class="menu-mobile__item hidden">
+                <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="#" 
+                        href="#description" 
                         title="Клавиатуры">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-keyboards.webp"
-                              alt="Клавиатуры">
                         <div class="menu-mobile__item-title">
-                            Клавиатуры
+                            Столы FoxGear LIFTISH
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
                 </li>
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="keyboards-he.html" 
-                        title="Клавиатуры с магнитными переключателями">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-keyboards-he.webp"
-                              alt="Клавиатуры с магнитными переключателями">
+                        href="#specs" 
+                        title="Технические характеристики">
                         <div class="menu-mobile__item-title">
-                            Клавиатуры с магнитными переключателями
+                            Технические характеристики
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
                 </li>
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="keycaps.html" 
-                        title="Кейкапы">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-keycaps.webp"
-                              alt="Кейкапы">
+                        href="#photos" 
+                        title="Аксессуары">
                         <div class="menu-mobile__item-title">
-                            Кейкапы
+                            Фотографии
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
                 </li>
-                <li class="menu-mobile__item hidden">
+                <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="#" 
+                        href="#review" 
                         title="О нас">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-about.webp"
-                              alt="О нас">
                         <div class="menu-mobile__item-title">
-                            О нас
+                            Отзывы
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
                 </li>
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
-                        href="index.html#contacts" 
+                        href="#contacts"
                         title="Контакты">
-                        <img class="menu-mobile__item-logo"
-                              src="images/menu-mobile/menu-mobile-contacts.webp"
-                              alt="Контакты">
                         <div class="menu-mobile__item-title">
                             Контакты
                         </div>
