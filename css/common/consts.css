@@ -52,16 +52,16 @@
 
     --text-color-main:          var(--black);
     --text-color-inverted:      var(--white);
-    --text-color-menu:          var(--black);
+    --text-color-menu:          var(--gray);
     --text-color-title-table:   var(--gray-darker);
 
-    --text-family-main:         Roboto, arial, sans-serif;
-    --text-family-menu:         'Roboto Condensed', arial, sans-serif;
+    --text-family-main:         Montserrat, arial, sans-serif;
+    --text-family-menu:         Montserrat, arial, sans-serif;
 
     --text-size-section:        32px;
     --text-size-legend:         18px;
     --text-size-page:           18px;
-    --text-size-menu:           16px;
+    --text-size-menu:           14px;
     --text-size-product:        16px;
     --text-size-footer:         16px;
     --text-size-single:         16px;
@@ -72,9 +72,9 @@
     --text-size-footer_mobile:  13px;
     --text-size-single_mobile:  15px;
  
-    --text-weight-main:         400;
-    --text-weight-semibold:     600;
-    --text-weight-bold:         700;
+    --text-weight-main:         300;
+    --text-weight-semibold:     400;
+    --text-weight-bold:         600;
 
     --text-line-height-section: 36px;
     --text-line-height-large:   24px;

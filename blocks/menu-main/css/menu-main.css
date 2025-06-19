@@ -1,8 +1,8 @@
 .menu-main {
     color: var(--text-color-menu, #656565);
     font-family: var(--text-family-menu, sans-serif);
-    font-size: var(--text-size-menu, 16px);
-    font-weight: var(--text-weight-main, 400);
+    font-size: var(--text-size-menu, 14px);
+    font-weight: var(--text-weight-semibold, 400);
 }
 
 .menu-main__items {
@@ -41,7 +41,7 @@
 }
 
 .menu-main__link:hover  {
-    color: var(--gray-deep-dark, #171717);
+    color: var(--black, #000000);
 
     border-bottom: 2px solid var(--black, #000000);
 }
