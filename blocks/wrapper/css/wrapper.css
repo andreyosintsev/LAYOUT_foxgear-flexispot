@@ -1,0 +1,21 @@
+.wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        max-width: 768px;
+    }
+}
