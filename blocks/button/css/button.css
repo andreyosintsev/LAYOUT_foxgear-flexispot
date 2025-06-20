@@ -30,11 +30,11 @@
 
 .button_buy {
     width: 100%;
-    padding: 13px 25px;
+    padding: 10px 25px;
 
-    font-size: 19px;
+    font-size: 17px;
 
-    line-height: 27px;
+    line-height: 24px;
 }
 
 .button_outlined {

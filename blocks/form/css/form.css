@@ -48,7 +48,7 @@
     line-height: 1.2;
 
     border: 3px solid transparent;
-    border-radius: var(--border-radius-button, 14px);
+    border-radius: var(--border-radius-button, 5px);
     
     box-shadow: 0 0 0 1px #868A89;
 
@@ -62,10 +62,9 @@
 }
 
 .form__radio-button .form__radio:checked + .form__label {
-    background-color: var(--green-light, #E0F3EF);
-
-    border: 3px solid var(--green, #00DFA9);
-    box-shadow: 0 0 0 1 var(--green, #00DFA9);
+    background-color: var(--gray-light, #D2D7D7);
+    border: 2px solid var( --gray-darker, #252525);
+    box-shadow: 0 0 0 1 var( --gray-darker, #252525);
 }
 
 .form__benefits {

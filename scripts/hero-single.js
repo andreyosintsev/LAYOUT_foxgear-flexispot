@@ -1,31 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('hero-single.js loaded!');
-    
-    const carousel = document.querySelector('.hero-single__images');
-    console.log('carousel', carousel);
+    console.log('hero-single js loaded!');
 
-    if (!carousel) {
-        return console.error('DOM: no carousel .hero-single__image element found');
+    const gallery = document.querySelector('.hero-single__gallery');
+
+    if (!gallery) return console.error('DOM: no .hero-single__gallery element found');
+
+    const buttonUp = document.querySelector('.hero-single__gallery-nav_up');
+    const buttonDown = document.querySelector('.hero-single__gallery-nav_down');
+
+    if (buttonUp) {
+        buttonUp.addEventListener('click', galleryScrollUp);
+    } else {
+        return console.warn('DOM: no element ".hero-single__gallery-nav_up" found');        
     }
 
-    const galleryImages = document.querySelector('.hero-single__gallery-images');
-    console.log('gallery images', galleryImages);
-    
-    if (!galleryImages) {
-        return console.error('DOM: no gallery .hero-single__gallery-images element found');
+    if (buttonDown) {
+        buttonDown.addEventListener('click', galleryScrollDown);
+    } else {
+        return console.warn('DOM: no element ".hero-single__gallery-nav_down" found');        
     }
-    
-    galleryImages.addEventListener('click', (e) => {
-        const currentImage = e.target;
-        if (!currentImage) {
-            return console.error('DOM: no current image .hero-single__gallery-image element found');
-        }
 
-        const index = currentImage.dataset.index;
-        console.log(index);
+    function galleryScrollUp () {
+        gallery.scrollBy({ top: -220, behavior: 'smooth' });
+    }
 
-        if (!index) return;
-        
-        carousel.trigger('to.owl.carousel', [index, 300]);
-    });
+    function galleryScrollDown () {
+        gallery.scrollBy({ top: 220, behavior: 'smooth' });
+    }    
 });

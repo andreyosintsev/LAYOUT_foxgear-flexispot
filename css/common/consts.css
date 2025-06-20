@@ -7,7 +7,7 @@
 */
 
     --max-content-width:        1920px;
-    --wrapper-width:            1600px;
+    --wrapper-width:            1440px;
     --content-width:            1080px;
     --tech-table-width:         1200px;
 
@@ -57,6 +57,7 @@
 
     --text-family-main:         Montserrat, arial, sans-serif;
     --text-family-menu:         Montserrat, arial, sans-serif;
+    --text-family-title:        'Roboto', arial, sans-serif;
 
     --text-size-section:        32px;
     --text-size-legend:         18px;
@@ -106,12 +107,12 @@
 /*
     Рамки
 */  --border-color-table:           var(--gray-medium);
-    --border-radius-hero-image:     20px; /* hero-single image  */
+    --border-radius-hero-image:     10px; /* hero-single image  */
     --border-radius-hero-slider:    16px; /* hero-slider  */
-    --border-radius-button:         14px; /* panel  */
+    --border-radius-button:         5px; /* panel  */
     --border-radius-card:           14px; /* card-product */
     --border-radius-menu-mobile:    14px; /* menu-mobile  */
-    --border-radius-gallery-image:  14px; /* hero-single gallery image  */
+    --border-radius-gallery-image:  3px; /* hero-single gallery image  */
     --border-radius-table:          4px; /* table  */
 
 /*

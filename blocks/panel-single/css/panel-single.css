@@ -1,21 +1,20 @@
 .panel-single {
     display: block;
-    width: clamp(190px, calc(37.3vw - 97px), 500px);
     padding: 0;
 
     color: var(--text-color-main, #000000);
     font-family: var(--text-family-main, sans-serif);
-    font-size: var(--text-size-single, 16px);
+    font-size: var(--text-size-main, 14px);
     font-weight: var(--text-weight-main, 400);
 
-    line-height: var(--text-line-height-large, 24px);
+    line-height: var(--text-line-height-specs, 22px);
 
     background-color: var(--background-color-main, #FFFFFF);
 }
 
 .panel-single__description {
-    padding-bottom: 26px;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     border-bottom: 1px solid var(--gray-light, #D2D7D7);
 
@@ -28,24 +27,27 @@
 .panel-single__title {
     margin: 0 0 5px 0;
 
-    font-size: 40px;
-    font-weight: var(--text-weight-bold, 700);
+    font-family: var(--text-family-title, sans-serif);
+    font-size: 26px;
+    font-weight: 500;
 
-    line-height: 44px;
+    line-height: 30px;
 }
 
 .panel-single__subtitle {
     margin-bottom: 6px;
 
-    color: var(--gray, #656565);
+    font-size: var(--text-size-product, 16px);
+    font-weight: var(--text-weight-bold, 600);
 }
 
 .panel-single__rating {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .panel-single__price {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: var(--text-weight-bold, 600);
 
     line-height: 33px;
 }
@@ -71,8 +73,7 @@
     .panel-single__title {
         margin: 20px 0 6px 0;
     
-        font-family: var(--text-family-menu, sans-serif);
-        font-size: 30px;
+        font-size: 26px;
     
         line-height: 33px;
     }
@@ -81,10 +82,6 @@
         margin-bottom: 0px;
     
         font-size: 16px;
-    }
-
-    .panel-single__rating {
-        margin-bottom: 0;
     }
 
     .panel-single__price {
@@ -99,5 +96,15 @@
 
     .panel-single__feature {
         line-height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .panel-single__title {
+        margin: 10px 0 6px 0;
+    
+        font-size: 20px;
+    
+        line-height: 24px;
     }
 }
