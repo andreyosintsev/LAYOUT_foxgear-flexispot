@@ -8,7 +8,7 @@
 
     --max-content-width:        1920px;
     --wrapper-width:            1440px;
-    --content-width:            1080px;
+    --content-width:            1230px;
     --tech-table-width:         1200px;
 
 
@@ -29,6 +29,7 @@
 
     --green-light:              #E0F3EF; /* button selected background*/
     --green:                    #00DFA9; /* button selected */
+    --beige:                    #F6F4F1; /* button selected background*/
     --orange-light:             #FFA366; /* text link hover*/
     --orange:                   #F76500; /* text link */ 
     --violet:                   #7671ff; /* text link dark */ 
@@ -76,6 +77,7 @@
     --text-weight-main:         300;
     --text-weight-semibold:     400;
     --text-weight-bold:         600;
+    --text-weight-extrabold:    700;
 
     --text-line-height-section: 36px;
     --text-line-height-large:   24px;
@@ -108,9 +110,10 @@
     Рамки
 */  --border-color-table:           var(--gray-medium);
     --border-radius-hero-image:     10px; /* hero-single image  */
-    --border-radius-hero-slider:    16px; /* hero-slider  */
+    --border-radius-hero-slider:    14px; /* hero-slider  */
     --border-radius-button:         5px; /* panel  */
     --border-radius-card:           14px; /* card-product */
+    --border-radius-flex:           12px; /* card-product */
     --border-radius-menu-mobile:    14px; /* menu-mobile  */
     --border-radius-gallery-image:  3px; /* hero-single gallery image  */
     --border-radius-table:          4px; /* table  */

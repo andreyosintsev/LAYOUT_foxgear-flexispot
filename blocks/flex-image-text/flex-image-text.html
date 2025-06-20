@@ -6,36 +6,31 @@
     <title>Flex Image Text Block</title>
     <link rel="stylesheet" href="../../css/common/normalize.css">
     <link rel="stylesheet" href="../../css/common/consts.css">
-    <link rel="stylesheet" href="../../css/common/typography.css">
-    <link rel="stylesheet" href="../section-title/css/section-title.css">
-    <link rel="stylesheet" href="../video/css/video.css">
+    <link rel="stylesheet" href="../wrapper/css/wrapper.css">
     <link rel="stylesheet" href="css/flex-image-text.css">
 </head>
 <body style="background-color: yellowgreen; padding: 10px;">
-    <div class="flex-image-text">
-        <div class="flex-image-text__item">
-            <img class="flex-image-text__icon"
-                src="../../images/flex-image-text/icon-1.avif">
-            <h3 class="section-title flex-image-text__title">Ex-actuate</h3>
-            <p class="p-text flex-image-text__text">
-                0.1mm, 4.0mm, or exactly .10 of an inch...with both high dynamic range and travel resolution Halo65 HE got your back whether you want to be the fastest gun in the West, or tune your rhythm in sync with that particular spell's cooldown timer.
-            </p>
-        </div>
-        <div class="flex-image-text__item">
-            <div class="video flex-image-text__video">
-                <video class="video__player" 
-                    autoplay
-                    loop
-                    muted
-                    webkit-playsinline
-                    playsinline 
-                    preload="none">
-                    <source src="../video/videos/video.webm" type="video/webm">
-                    <source src="../video/videos/video.mp4" type="video/mp4">            
-                    Ваш браузер не поддерживает видео
-                </video>
+    <div class="wrapper">
+    
+        <div class="flex-image-text flex-image-text_reverse">
+            <div class="flex-image-text__item flex-image-text__item_flex-end">
+                <img class="flex-image-text__image"
+                    src="../../images/product/01.avif"
+                    alt="Stylish and practical"
+                    title="Stylish and practical">
+                </img>
+            </div>
+            <div class="flex-image-text__item">
+                <div class="flex-image-text__text">
+                    <p class="flex-image-text__super">Award-winning design</p>
+                    <h2 class="flex-image-text__title">Stylish and practical</h2>
+                    <p>
+                        Stylish and practical, this desk has the best design and has your back too. With a durable bamboo desktop and an enchanting oval design, as well as back support for long hours hard at work, it makes sense that it won both the International Design Award for aesthetics and the SIT Furniture Design Award.
+                    </p>
+                </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
