@@ -3,7 +3,7 @@
 
     width: 100%;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0;
 
     font-family: var(--text-family-main, sans-serif);
 
@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: var(--wrapper-width, 1600px);
+    max-width: var(--header-width, 1600px);
     margin: 0 auto;
 }
 
@@ -37,9 +37,23 @@
     margin-right: 30px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
+    .header__wrapper {
+        padding: 0;
+    }
+
+    .header {
+        padding: 0 40px;
+    }    
+}
+
+@media (max-width: 768px) {
     .header {
         padding: 0 14px;
+    }
+
+    .header__wrapper {
+        padding: 0;
     }
 
     .header__logo {
