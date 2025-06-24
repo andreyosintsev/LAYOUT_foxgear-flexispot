@@ -1,7 +1,6 @@
 {
-  "name": "FoxGear NuPhy",
-  "short_name": "FoxGear NuPhy",
-  "start_url": "./",
+  "name": "FoxGear",
+  "short_name": "foxgear",
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
