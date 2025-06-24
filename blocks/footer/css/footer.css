@@ -4,28 +4,25 @@
     max-width: var(--max-content-width, 1920px);
     margin: 0 auto;
 
-    color: var(--text-color-main, #000000);
     font-family: var(--text-family-main, sans-serif);
-    font-size: var(--text-size-footer, 16px);
-    
-    line-height: var(--text-line-height-footer, 23px);
+    font-size: var(--text-size-small, 14px);
+    color: var(--white, #FFFFFF);
 
-    background-color: var(--white, #FFFFFF);
-
-    border-top: 1px solid var(--gray-light, #E8E8E1);
+    background-color: var(--black, #000000);
 }
 
-.footer__wrapper {
+.footer__content {
     display: block;
     width: 100%;
-    max-width: var(--wrapper-width, 1600px);
+    max-width: var(--header-width, 1600px);
     margin: 0 auto;
-    padding: 50px 0 30px;
+    padding: 30px 0;
 }
 
 .footer__menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "menu1 menu2 contacts";
     justify-content: center;
 }
 
@@ -35,14 +32,31 @@
     margin-bottom: 40px;
 }
 
-.footer__menu-title {
-    margin-bottom: 15px;
+.footer__menu-column:nth-child(1) {
+    grid-area: menu1;
+}
 
-    font-weight: var(--text-weight-bold, 700);
+.footer__menu-column:nth-child(2) {
+    grid-area: menu2;
+}
+
+.footer__menu-contacts {
+    grid-area: contacts;
+    padding: 0 16px;
+    margin-bottom: 40px;
+    justify-self: center;
+}
+
+.footer__menu-title {
+    margin-bottom: 10px;
+
+    font-weight: var(--text-weight-bold, 600);
 }
 
 .footer__menu-item {
-    padding: 4px 0;
+    font-size: 12px;
+
+    line-height: 20px;
 }
 
 .footer__menu-link {
@@ -56,54 +70,14 @@
 }
 
 .footer__motto {
-    padding: 30px 14px;
+    font-size: 12px;
 
-    font-size: 13px;
-
-    line-height: 20px;
+    line-height: 14px;
 
     text-align: center;
-
-    border-top: 1px solid var(--gray-lighter, #E8E8E1);
 }
 
-@media (max-width: 768px) {
-    .footer {
-        font-size: var(--text-size-footer_mobile, 13px);
-    
-        line-height: var(--text-line-height-footer_mobile, 20px);
-    }
-
-    .footer__menu {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer__menu-column {
-        justify-self: auto;
-        margin-bottom: 20px;
-    }
-
-    .footer__menu-title {
-        margin-bottom: 5px;
-    };
-
-    .footer__menu-item {
-        padding: 0;
-    }
-
-    .footer__motto {
-
-
-        text-align: left;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer__menu {
-        grid-template-columns: 1fr;
-    }
-}
-/* @media (max-width: 560px) {
+@media (max-width: 560px) {
     .footer__menu {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "menu1 menu2" "contacts contacts";
@@ -119,4 +93,4 @@
         margin-bottom: 30px;
         justify-self: auto;
     }
-} */
+}
