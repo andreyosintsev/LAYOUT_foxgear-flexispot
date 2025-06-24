@@ -85,6 +85,10 @@ body {
     margin: 0 auto 100px;
 }
 
+.image-slider {
+    margin-top: 50px;
+}
+
 @media (max-width: 1600px) {
     .main {
         padding-top: 70px;

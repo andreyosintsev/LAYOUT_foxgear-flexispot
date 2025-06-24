@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/common/normalize.css">
     <link rel="stylesheet" href="css/common/owl.carousel.min.css">
     <link rel="stylesheet" href="css/common/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/common/twentytwenty.css">
+    <link rel="stylesheet" href="../../css/common/lightbox.min.css" >
     <link rel="stylesheet" href="css/common/consts.css">
     <link rel="stylesheet" href="css/common/typography.css">
 
@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="blocks/block-youtube/css/block-youtube.css">
     <link rel="stylesheet" href="blocks/in-the-box/css/in-the-box.css">
     <link rel="stylesheet" href="blocks/tech-specs/css/tech-specs.css">
+    <link rel="stylesheet" href="blocks/image-slider/css/image-slider.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
     <link rel="stylesheet" href="blocks/popup/css/popup.css">
@@ -148,7 +149,7 @@
             </ul>
         </div>
     </div>
-    <main class="main">
+    <main class="main"  id="description">
         <div class="wrapper-1600 main__wrapper">
             <div class="hero-single">
                 <div class="hero-single__gallery-nav hero-single__gallery-nav_up"></div>
@@ -697,7 +698,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-image-specs" id="specs">
+            <h2 class="section-title" id="specs">Технические характеристики</h2>
+            <div class="flex-image-specs">
                 <div class="flex-image-specs__item flex-image-specs__item_flex-end">
                     <img class="flex-image-specs__image"
                         src="../../images/specs/01.avif"
@@ -815,6 +817,85 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <h2 class="section-title" id="photos">Фотографии</h2>
+            <div class="image-slider">
+                <div class="image-slider__button image-slider__button_prev"></div>
+                <div class="image-slider__cards owl-carousel owl-theme">
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/01.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/01.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/02.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/02.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/03.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/03.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/04.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/04.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/05.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/05.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/06.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/06.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/07.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/07.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/08.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/08.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                    <div class="image-slider__card">
+                        <a class="image-slider__link" 
+                            href="../../images/photos/09.webp" 
+                            data-lightbox="image"
+                            title="Фотография компьютерного стола FoxGear LIFTISH FG-ED-55">
+                            <img class="image-slider__image" src="../../images/photos/09.webp" alt="FoxGear - кресла и аксессуары">
+                        </a>
+                    </div>
+                </div>
+                <div class="image-slider__button image-slider__button_next"></div>
             </div>
         </div>
     </main>
@@ -944,6 +1025,7 @@
     <script src="scripts/util/owl.carousel.min.js"></script>
     <script src="scripts/util/jquery.event.move.js"></script>
     <script src="scripts/util/jquery.twentytwenty.js"></script>
+    <script src="scripts/util/lightbox.min.js"></script>
     <script src="scripts/menu-mobile.js"></script>
     <script src="scripts/back-to-top.js"></script>
     <script src="scripts/accordion.js"></script>
@@ -951,10 +1033,13 @@
     <script src="scripts/hero-single.js"></script>
     <script src="scripts/single-slider.js"></script>
     <script src="scripts/popup.js"></script>
+    
 
     <script>
-        $(function(){
-            $("#comparison-images1").twentytwenty({ no_overlay: true });
+        lightbox.option({
+            'disableScrolling': true,
+            'resizeDuration': 200,
+            'wrapAround': true
         })
     </script>
 </body>

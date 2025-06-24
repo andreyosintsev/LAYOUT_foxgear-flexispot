@@ -29,4 +29,25 @@ $(document).ready(function() {
             $carousel.trigger('to.owl.carousel', [index, 300]);
         });
     }
+
+    const $owl = $('.image-slider__cards').owlCarousel(
+        {
+            margin: 5,
+            loop: true,
+            nav: false,
+            dots: false,
+            animateIn: "fadeInLeft",
+            animateOut: "fadeOutLeft",
+            pullDrag: true,
+            autoWidth: true,
+            autoHeight: false,
+        });
+        $(".image-slider__button_next").click(function() {
+            $owl.trigger("next.owl.carousel");
+        });
+
+        $(".image-slider__button_prev").click(function() {
+            $owl.trigger("prev.owl.carousel");
+    });
+
 });
