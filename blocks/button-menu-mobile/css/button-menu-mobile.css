@@ -3,7 +3,6 @@
     justify-self: end;
     width: 20px;
     height: 20px;
-    margin-left: 17px;
 
     justify-self: end;
    
@@ -43,6 +42,6 @@
 @media (max-width: 900px) {
     .button-menu-mobile {
         display: block;
-        margin-left: 30px;
+        margin-left: 66px;
     }
 }
