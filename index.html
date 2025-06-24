@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="blocks/in-the-box/css/in-the-box.css">
     <link rel="stylesheet" href="blocks/tech-specs/css/tech-specs.css">
     <link rel="stylesheet" href="blocks/image-slider/css/image-slider.css">
+    <link rel="stylesheet" href="blocks/youtube-videos/css/youtube-videos.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
     <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
     <link rel="stylesheet" href="blocks/popup/css/popup.css">
@@ -69,8 +70,8 @@
                         </a>
                     </li>
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="#reviews" title="Отзывы о столах LIFTISH">
-                            Отзывы
+                        <a class="menu-main__link" href="#reviews" title="Обзоры столов LIFTISH">
+                            Обзоры
                         </a>
                     </li>
                     <li class="menu-main__item">
@@ -129,9 +130,9 @@
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link" 
                         href="#review" 
-                        title="О нас">
+                        title="Обзоры">
                         <div class="menu-mobile__item-title">
-                            Отзывы
+                            Обзоры
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
@@ -346,19 +347,19 @@
                             <div class="form__radio-button">
                                 <input class="form__radio" 
                                         type="radio" 
+                                        id="form__radio_jade" 
+                                        name="switch"
+                                        value="Magnetic Jade Pro">
+                                <label class="form__label" for="form__radio_jade">Белый</label>
+                            </div>
+                            <div class="form__radio-button">
+                                <input class="form__radio" 
+                                        type="radio" 
                                         id="form__radio_coral" 
                                         name="switch"
                                         value="Magnetic Coral"
                                         checked>
                                 <label class="form__label" for="form__radio_coral">Чёрный</label>
-                            </div>
-                            <div class="form__radio-button">
-                                <input class="form__radio" 
-                                        type="radio" 
-                                        id="form__radio_jade" 
-                                        name="switch"
-                                        value="Magnetic Jade Pro">
-                                <label class="form__label" for="form__radio_jade">Белый</label>
                             </div>
                         </fieldset>
                         <ul class="benefits form__benefits">
@@ -434,7 +435,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper main__weapper">
+        <div class="wrapper main__wrapper">
             <div class="flex-image-text">
                 <div class="flex-image-text__item flex-image-text__item_flex-end">
                     <img class="flex-image-text__image"
@@ -897,6 +898,33 @@
                 </div>
                 <div class="image-slider__button image-slider__button_next"></div>
             </div>
+            <section class="youtube-videos" id="reviews">
+                <h2 class="section-title youtube-videos__title">Видеообзоры</h2>
+                <div class="youtube-videos__content">
+                    <div class="youtube-videos__video block-youtube">
+                        <iframe class="block-youtube__video"
+                            src="https://www.youtube.com/embed/8Akt8HkzB-8?start=0&amp;autoplay=0&amp;loop=0&amp;mute=0&amp;controls=1&amp;enablejsapi=1"
+                            allowfullscreen=""
+                            frameborder="0"
+                            width="560"
+                            height="315"
+                            allow="autoplay"
+                            title="Видеообзор на компьютерный стол FoxGear FG-ED-55">
+                        </iframe>
+                    </div>
+                    <div class="youtube-videos__video block-youtube">
+                        <iframe class="block-youtube__video"
+                            src="https://www.youtube.com/embed/FF6S7Qy9KdE?start=0&amp;autoplay=0&amp;loop=0&amp;mute=0&amp;controls=1&amp;enablejsapi=1"
+                            allowfullscreen=""
+                            frameborder="0"
+                            width="560"
+                            height="315"
+                            allow="autoplay"
+                            title="Видеообзор стола с переменной высотой FoxGear FG-ED-55">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="footer">
