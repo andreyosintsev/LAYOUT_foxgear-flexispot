@@ -28,6 +28,11 @@ $(document).ready(function() {
             const index = $(this).data('index');
             $carousel.trigger('to.owl.carousel', [index, 300]);
         });
+
+        $('.form__label').on('click', function() {
+            const index = $(this).data('index');
+            $carousel.trigger('to.owl.carousel', [index, 300]);
+        });
     }
 
     const $owl = $('.image-slider__cards').owlCarousel(

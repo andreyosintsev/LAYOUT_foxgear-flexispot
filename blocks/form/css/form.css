@@ -63,7 +63,7 @@
 
 .form__radio-button .form__radio:checked + .form__label {
     background-color: var(--gray-light, #D2D7D7);
-    border: 2px solid var( --gray-darker, #252525);
+    outline: 2px solid var( --gray-darker, #252525);
     box-shadow: 0 0 0 1 var( --gray-darker, #252525);
 }
 

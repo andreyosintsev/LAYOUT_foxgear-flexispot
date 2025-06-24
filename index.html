@@ -349,17 +349,17 @@
                                         type="radio" 
                                         id="form__radio_jade" 
                                         name="switch"
-                                        value="Magnetic Jade Pro">
-                                <label class="form__label" for="form__radio_jade">Белый</label>
+                                        value="FG-ED-55W цвет белый">
+                                <label class="form__label" for="form__radio_jade" data-index="0">Белый</label>
                             </div>
                             <div class="form__radio-button">
                                 <input class="form__radio" 
                                         type="radio" 
                                         id="form__radio_coral" 
                                         name="switch"
-                                        value="Magnetic Coral"
+                                        value="FG-ED-55B цвет чёрный"
                                         checked>
-                                <label class="form__label" for="form__radio_coral">Чёрный</label>
+                                <label class="form__label" for="form__radio_coral" data-index="1">Чёрный</label>
                             </div>
                         </fieldset>
                         <ul class="benefits form__benefits">
@@ -380,7 +380,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <button class="button button_buy" type="button">КУПИТЬ</button>
+                        <button class="button button_buy" type="button" data-product="стол">КУПИТЬ</button>
                     </form>
                     <div class="panel-single__features">
                         <div class="panel-single__features-header">
@@ -613,7 +613,15 @@
                                     <strong>LIFTISCH FG-ED-55W</strong>
                                 </li>
                                 <li class="tech-specs__specs-item">
-                                    <button class="button tech-specs__button button_buy" type="button">КУПИТЬ</button>
+                                                                        <form>
+                                        <input class="form__radio hidden" 
+                                        type="radio" 
+                                        id="form__radio_jade" 
+                                        name="switch"
+                                        value="FG-ED-55W цвет белый"
+                                        checked>
+                                        <button class="button tech-specs__button button_buy" type="button" >КУПИТЬ</button>
+                                    </form>
                                 </li>
                             </ul>
                         </div>
@@ -627,7 +635,15 @@
                                     <strong>LIFTISCH FG-ED-55B</strong>
                                 </li>
                                 <li class="tech-specs__specs-item">
-                                    <button class="button tech-specs__button button_buy" type="button">КУПИТЬ</button>
+                                    <form>
+                                        <input class="form__radio hidden" 
+                                        type="radio" 
+                                        id="form__radio_jade" 
+                                        name="switch"
+                                        value="FG-ED-55B цвет чёрный"
+                                        checked>
+                                        <button class="button tech-specs__button button_buy" type="button" >КУПИТЬ</button>
+                                    </form>
                                 </li>
                             </ul>
                         </div>

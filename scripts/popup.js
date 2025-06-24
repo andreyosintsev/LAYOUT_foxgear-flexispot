@@ -176,7 +176,7 @@
         console.log(product);
         const specs = getSelectedSpecs(button && button.form) || '';
 
-        const fullProduct = (product + ' - ' + specs).trim();
+        const fullProduct = (product + ' '+ specs).trim();
 
         inputProduct.value = fullProduct;
         popupProduct.innerHTML = `Модель: ${fullProduct}`; 
