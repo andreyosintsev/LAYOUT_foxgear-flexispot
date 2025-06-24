@@ -1,0 +1,132 @@
+.flex-image-specs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--content-width, 1230px);
+    margin: 0 auto;
+
+    font-family: var(--text-family-main, sans-serif);
+    font-size: var(--text-size-main, 14px);
+    font-weight: var(--text-weight-main, 300);
+
+    line-height: 150%;
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.flex-image-specs_background-white {
+    background-color: var(--white, #FFFFFF);
+}
+
+.flex-image-specs_reverse .flex-image-specs__item:first-child {
+    order: 2;
+}
+
+.flex-image-specs_reverse .flex-image-specs__item:last-child {
+    order: 1;
+}
+
+.flex-image-specs_center .flex-image-specs__image {
+    margin-bottom: 0;
+}
+
+.flex-image-specs_center .flex-image-specs__text {
+    text-align: center;
+}
+
+.flex-image-specs__item {
+    width: 50%;
+}
+
+.flex-image-specs__item_flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-image-specs__image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+    border-radius: var(--border-radius-flex, 12px);
+}
+
+.flex-image-specs__specs {
+    padding: 30px;
+}
+
+.flex-image-specs__title {
+    margin: 0;
+    padding: 10px 0;
+
+    font-size: var(--text-size-page, 18px);
+    font-weight: var(--text-weight-bold, 600);
+
+    line-height: 24px;
+
+    text-align: left;
+}
+
+.flex-image-specs__description {
+    font-size: var(--text-size-product, 16px);
+
+    line-height: 150%;
+
+    padding-bottom: 20px;
+}
+
+.flex-image-specs__table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flex-image-specs__cell {
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--gray-medium, #B7B7B7);
+}
+
+.flex-image-specs__cell:nth-child(2n) {
+    padding-left: 10px;
+}
+
+.flex-image-specs__cell_no-border {
+    border-bottom: none;
+}
+
+.flex-image-specs__link {
+    color: var(--black-light, #004DF2);
+
+    text-decoration: none;
+}
+
+.flex-image-specs__link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .flex-image-specs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-image-specs__item {
+        width: 100%;
+    }
+
+    .flex-image-specs__image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flex-image-specs__specs {
+        padding: 0;
+    }
+
+    .flex-image-specs__cell {
+        padding: 5px 0;
+    }
+}

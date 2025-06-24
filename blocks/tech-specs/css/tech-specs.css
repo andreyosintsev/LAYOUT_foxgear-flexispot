@@ -25,7 +25,7 @@
 
     color: var(--gray, #656565);
     font-family: var(--text-family-main, sans-serif);
-    font-size: 50px;
+    font-size: 46px;
     font-weight: var(--text-weight-extrabold, 700);
 
     line-height: 60px;
