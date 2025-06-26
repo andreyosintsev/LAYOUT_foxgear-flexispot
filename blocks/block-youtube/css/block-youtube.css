@@ -1,7 +1,17 @@
 .block-youtube {
+    width: 100%;
+    max-width: var(--wrapper-width, 1200px);
+
+    overflow: hidden;
+}
+
+.block-youtube__content {
     position: relative;
     width: 100%;
     max-width: var(--wrapper-width, 1200px);
+    height: 0;
+    padding-top: 52.25%;
+
     aspect-ratio: 16 / 9;
 
     border-width: 0;
