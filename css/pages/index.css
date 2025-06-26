@@ -64,29 +64,9 @@ body {
     margin-bottom: 20px;
 }
 
-.mt-40 {
-    margin-top: 40px !important;
-}
-
-.mb-40 {
-    margin-bottom: 40px !important;
-}
-
-.mb-30 {
-    margin-bottom: 30px !important;
-}
-
-.in-the-box {
-    margin-top: 100px;
-    margin-bottom: 10px;
-}
 
 .tech-specs {
     margin: 0 auto 100px;
-}
-
-.image-slider {
-    margin-top: 50px;
 }
 
 .youtube-videos {

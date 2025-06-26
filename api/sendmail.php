@@ -4,8 +4,8 @@
     //$from       = 'info@foxgamer.ru';
     //$to         = 'info@foxgamer.ru';
 
-    $site       = 'nuphy.ru';
-    $from       = 'info@nuphy.ru';
+    $site       = 'foxgear.store';
+    $from       = 'info@flexispot.ru';
     $to         = 'kintaro_oe@inbox.ru';
 
     $name       = $_POST['name'];
@@ -13,7 +13,7 @@
     $email      = $_POST['email'];
     $product    = $_POST['product'];
 
-    $subject = mb_encode_mimeheader('Заявка с сайта клавиатур NuPhy','UTF-8', 'B');
+    $subject = mb_encode_mimeheader('Заявка с сайта foxgear.store','UTF-8', 'B');
 
     $headers = "From: ". $from. "\r\n";
     $headers .= "Reply-To: ". $from. "\r\n";
