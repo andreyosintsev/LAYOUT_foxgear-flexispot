@@ -57,7 +57,7 @@
 }
 
 .flex-image-text__text {
-    padding: 0 clamp(20px, 21.7vw - 147px, 120px) 0 clamp(20px, 21.7vw - 147px, 120px);
+    padding: 20px clamp(20px, 21.7vw - 177px, 90px) 0;
 
     text-align: left;
 }
@@ -75,9 +75,13 @@
     font-size: 52px;
     font-weight: var(--text-weight-extrabold, 700);
 
-    line-height: 60px;
+    line-height: 50px;
 
     text-align: left;
+
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .flex-image-text__link {
@@ -91,7 +95,7 @@
 
     list-style: none;
 
-    line-height: 300%;
+    line-height: 250%;
 }
 
 .blue {
