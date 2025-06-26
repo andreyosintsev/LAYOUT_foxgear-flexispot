@@ -421,8 +421,8 @@
                                         <li class="panel-single__feature">Уровень шума: &lt;50 дБ</li>
                                         <li class="panel-single__feature">Расстояние хода: 640 мм</li>
                                         <li class="panel-single__feature">Противоударная система</li>
-                                        <li class="panel-single__feature">Высота столешницы: 610-1250 мм</li>
-                                        <li class="panel-single__feature">Размеры столешницы: 1404х704 мм</li>
+                                        <li class="panel-single__feature">Высота столешницы: 610 - 1250 мм</li>
+                                        <li class="panel-single__feature">Размеры столешницы: 1404 х 704 мм</li>
                                     </ul>
                                 </div>
                             </div>
@@ -664,7 +664,7 @@
                             <ul class="tech-specs__specs-items">
                                 <li class="tech-specs__specs-item">
                                     <img class="tech-specs__image"
-                                        src="images/tech-specs/dual-motor.avif"
+                                        src="images/tech-specs/dual-motor.png"
                                         alt="Двойной электромотор">
                                     <div class="tech-specs__specs-item-title">
                                         Двойной электромотор
@@ -696,7 +696,7 @@
                             <ul class="tech-specs__specs-items">
                                 <li class="tech-specs__specs-item">
                                     <img class="tech-specs__image"
-                                        src="images/tech-specs/wireless-charger.avif"
+                                        src="images/tech-specs/wireless-charger.png"
                                         alt="Беспроводная зарядка">
                                     <div class="tech-specs__specs-item-title">
                                         Беспроводная зарядка
@@ -714,7 +714,7 @@
                                 </li>
                                 <li class="tech-specs__specs-item">
                                     <img class="tech-specs__image"
-                                        src="images/tech-specs/load-capacity.avif"
+                                        src="images/tech-specs/load-capacity.png"
                                         alt="Большая столешница">
                                     <div class="tech-specs__specs-item-title">
                                         Грузоподъёмность
@@ -730,7 +730,7 @@
             <div class="flex-image-specs">
                 <div class="flex-image-specs__item flex-image-specs__item_flex-end">
                     <img class="flex-image-specs__image"
-                        src="images/specs/01.avif"
+                        src="images/specs/01.webp"
                         alt="Габаритные размеры стола"
                         title="Габаритные размеры стола">
                     </img>
@@ -776,8 +776,8 @@
                                 Размеры столешницы
                             </div>
                             <div class="flex-image-specs__cell">
-                                1404х704 мм
-                            </div>  
+                                1404 х 704 мм
+                            </div>
                             <div class="flex-image-specs__cell">
                                 Уровень шума
                             </div>
@@ -805,7 +805,7 @@
             <div class="flex-image-specs">
                 <div class="flex-image-specs__item flex-image-specs__item_flex-end">
                     <img class="flex-image-specs__image"
-                        src="images/specs/02.avif"
+                        src="images/specs/02.webp"
                         alt="Пульт управления"
                         title="Пульт управления">
                     </img>
@@ -1076,6 +1076,56 @@
                 Мы поможем вам подобрать идеальный стол для вашего рабочего пространства.
             </div>
         </div>
+        <div class="popup hidden" id="popup-order">
+            <div class="loader hidden"></div>
+            <h2 class="h2 popup__heading">
+                Оставьте заявку
+            </h2>
+            <p class="popup__product"></p>
+            <form class="form popup__form">
+                <input class="form__input" name="name" placeholder="Ваше имя">
+                <input class="form__input" name="tel" placeholder="Телефон">
+                <input class="form__input" name="email" placeholder="E-mail">
+                <input type="hidden" name="product">
+                <div class="form__submit">
+                    <input class="button form__button" type="submit" value="Отправить">
+                    <div class="form__offer">
+                        Нажимая кнопку &ldquo;Отправить&rdquo;<br>
+                        вы соглашаетесь с <a class="form__link" href="https://foxgear.store/agreement.html" title="Текст публичной оферты" target="_blank">публичной офертой</a>
+                    </div>
+                </div>
+            </form>
+            <div class="popup__close"></div>
+        </div>
+        <div class="popup popup_success hidden" id="popup-success">
+            <h2 class="h2 popup__heading popup__heading_success">
+                Успешно отправлено
+            </h2>
+            <p class="popup__text">
+                Ваше запрос было успешно отправлен.
+            </p>
+            <p class="popup__text">
+                В ближайшее время наш менеджер свяжется с Вами и предоставит всю необходимую информацию.
+            </p>
+            <p class="popup__text">
+                Благодарим за обращение!
+            </p>        
+        </div>
+        <div class="popup popup_failed hidden" id="popup-failed">
+            <h2 class="h2 popup__heading popup__heading_failed">
+                Сообщение не отправлено
+            </h2>
+            <p class="popup__text">
+                К сожалению, Ваш запрос отправить не удалось.
+            </p>
+            <p class="popup__text">
+                Но мы знаем о проблеме, и совсем скоро её устраним. Попробуйте ещё раз отправить обращение позже.
+            </p>
+            <p class="popup__text">
+                Просим прощения за доставленные неудобства.
+            </p>        
+        </div>
+        <div class="overlay hidden"></div>
     </footer>
     <div class="back-to-top invisible">
         <svg class="back-to-top__icon" id="back-to-top" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
