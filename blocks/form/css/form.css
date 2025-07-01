@@ -25,7 +25,7 @@
 .form__legend {
     margin-bottom: 10px;
 
-    font-size: var(--text-size-legend, 18px);    
+    font-size: var(--text-size-legend, 18px);
     font-weight: var(--text-weight-bold, 700);
 
     line-height: 27px;
@@ -39,7 +39,6 @@
 }
 
 .form__label {
-    /* margin: 0 0 10px 0; */
     margin: 0;
     padding: 12px;
 
@@ -49,7 +48,7 @@
 
     border: 3px solid transparent;
     border-radius: var(--border-radius-button, 5px);
-    
+
     box-shadow: 0 0 0 1px #868A89;
 
     cursor: pointer;
@@ -67,6 +66,16 @@
     box-shadow: 0 0 0 1 var( --gray-darker, #252525);
 }
 
+.form__radio:disabled + .form__label {
+    cursor: not-allowed;
+    opacity: 0.5;
+    box-shadow: none;
+    outline: none;
+    background-color: var(--background-disabled, #F0F0F0);
+    color: var(--text-color-disabled, #999999);
+    border-color: transparent;
+}
+
 .form__benefits {
     margin-bottom: 30px;
 }
@@ -74,9 +83,9 @@
 @media (max-width: 768px) {
     .form__legend {
         margin-bottom: 12px;
-    
-        font-size: var(--text-size-legend_mobile, 16px);    
-    
+
+        font-size: var(--text-size-legend_mobile, 16px);
+
         line-height: 24px;
     }
 

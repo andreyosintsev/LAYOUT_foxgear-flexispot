@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="blocks/section-title/css/section-title.css">
     <link rel="stylesheet" href="blocks/flex-image-text/css/flex-image-text.css">
     <link rel="stylesheet" href="blocks/flex-image-specs/css/flex-image-specs.css">
+    <link rel="stylesheet" href="blocks/flex-video-image/css/flex-video-image.css">
     <link rel="stylesheet" href="blocks/tech-specs/css/tech-specs.css">
     <link rel="stylesheet" href="blocks/image-slider/css/image-slider.css">
     <link rel="stylesheet" href="blocks/block-youtube/css/block-youtube.css">
@@ -55,13 +56,13 @@
             <nav class="menu-main header__menu-main">
                 <ul class="menu-main__items">
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="#description" title="Презентация столов FoxGear LIFTISH">
-                            Столы FoxGear
+                        <a class="menu-main__link" href="#specs" title="Технические характеристики столов">
+                            Характеристики
                         </a>
                     </li>
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="#specs" title="Технические характеристики столов">
-                            Характеристики
+                        <a class="menu-main__link" href="#manuals" title="Инструкции по сборке столов FoxGear LIFTISH">
+                            Инструкции
                         </a>
                     </li>
                     <li class="menu-main__item">
@@ -104,20 +105,20 @@
             <ul class="menu-mobile__items">
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link"
-                        href="#description"
-                        title="Презентация столов FoxGear LIFTISH">
+                        href="#specs"
+                        title="Технические характеристики">
                         <div class="menu-mobile__item-title">
-                            Столы FoxGear LIFTISH
+                            Характеристики
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
                 </li>
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__item-link"
-                        href="#specs"
-                        title="Технические характеристики">
+                        href="#manuals"
+                        title="Инструкции по сборке столов FoxGear LIFTISH">
                         <div class="menu-mobile__item-title">
-                            Характеристики
+                            Инструкции
                         </div>
                         <div class="menu-mobile__item-arrow"></div>
                     </a>
@@ -352,23 +353,44 @@
                         </div>
                         <form class="form panel__form">
                             <fieldset class="form__fieldset">
-                                <legend class="form__legend">Цвет стола</legend>
+                                <legend class="form__legend">Цвет каркаса</legend>
                                 <div class="form__radio-button">
                                     <input class="form__radio"
                                             type="radio"
-                                            id="form__radio_jade"
-                                            name="switch"
-                                            value="FG-ED-55W цвет белый"
+                                            id="form__radio_dark-frame-white"
+                                            name="frame"
+                                            value="белый каркас"
                                             checked>
-                                    <label class="form__label" for="form__radio_jade" data-index="0">Белый</label>
+                                    <label class="form__label" for="form__radio_dark-frame-white" data-index="0">Белый</label>
                                 </div>
                                 <div class="form__radio-button">
                                     <input class="form__radio"
                                             type="radio"
-                                            id="form__radio_coral"
-                                            name="switch"
-                                            value="FG-ED-55B цвет чёрный">
-                                    <label class="form__label" for="form__radio_coral" data-index="1">Чёрный</label>
+                                            id="form__radio_dark-frame-black"
+                                            name="frame"
+                                            value="чёрный каркас">
+                                    <label class="form__label" for="form__radio_dark-frame-black" data-index="1">Чёрный</label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Цвет столешницы</legend>
+                                <div class="form__radio-button">
+                                    <input class="form__radio"
+                                            type="radio"
+                                            id="form__radio_desktop-light"
+                                            name="desktop"
+                                            value="столешница светлый бамбук"
+                                            checked>
+                                    <label class="form__label" for="form__radio_desktop-light">Светлый бамбук</label>
+                                </div>
+                                <div class="form__radio-button">
+                                    <input class="form__radio"
+                                            type="radio"
+                                            id="form__radio_desktop-dark"
+                                            name="desktop"
+                                            value="столешница тёмный бамбук"
+                                            disabled>
+                                    <label class="form__label" for="form__radio_desktop-dark">Тёмный бамбук</label>
                                 </div>
                             </fieldset>
                             <ul class="benefits form__benefits">
@@ -389,7 +411,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <button class="button button_buy" type="button" data-product="стол">КУПИТЬ</button>
+                            <button class="button button_buy" type="button" data-product="Стол FG-ED-55: ">КУПИТЬ</button>
                         </form>
                         <div class="accordion panel-single__details">
                             <div class="accordion__content">
@@ -440,7 +462,7 @@
                                         ГАРАНТИЙНЫЕ ОБЯЗАТЕЛЬСТВА
                                     </div>
                                     <div class="accordion__item-content">
-                                        Гарантийный срок 1 год с даты продажи распространяется на все клавиатуры NuPhy. При возникновении проблем с качеством товара обращайтесь к продавцу.
+                                        Гарантийный срок 1 год с даты продажи распространяется на все столы FoxGear. При возникновении проблем с качеством товара обращайтесь к продавцу.
                                     </div>
                                 </div>
                             </div>
@@ -499,7 +521,7 @@
                         <p class="flex-image-text__super">Лоток для проводов</p>
                         <h2 class="flex-image-text__title">Кабели не видны</h2>
                         <p>
-                            Вы больше не запнётесь за провод, ведь они лежат в своём лотке. Батарея сдулась, а зарядного устройства нет под рукой? Нет проблема. Этот стол оснащён беспроводной зарядкой для вашего удобства.
+                            Вы больше не запнётесь за провод, ведь они лежат в своём лотке. Батарея сдулась, а зарядного устройства нет под рукой? Не проблема. Этот стол оснащён беспроводной зарядкой для вашего удобства.
                         </p>
                         <p>
                             Кабелей не видно. Блаженство.
@@ -571,16 +593,16 @@
                 <div class="flex-image-text__item flex-image-text__item_flex-end">
                     <img class="flex-image-text__image"
                         src="images/product/07.webp"
-                        alt="Практичный деревянный брусок"
-                        title="Практичный деревянный брусок">
+                        alt="Деревянный брусок для крепления монитора (приобретается отдельно)"
+                        title="Деревянный брусок для крепления монитора (приобретается отдельно)">
                     </img>
                 </div>
                 <div class="flex-image-text__item">
                     <div class="flex-image-text__text">
-                        <p class="flex-image-text__super">Практичный деревянный брусок</p>
+                        <p class="flex-image-text__super">Деревянный брусок</p>
                         <h2 class="flex-image-text__title">Используйте с кронштейном для монитора</h2>
                         <p>
-                            Стол FoxGear FG-ED-55 поставляется с практичным деревянным бруском. Он заполняет зазор под столешницей и обеспечивает прочную основу для простого крепления кронштейна для монитора.
+                            Для крепления монитора к столу FoxGear FG-ED-55 используйте, например, обычный деревянный брусок. Он заполняет зазор под столешницей и обеспечивает прочную основу для простого крепления кронштейна для монитора.
                         </p>
                     </div>
                 </div>
@@ -607,7 +629,7 @@
                             <li class="flex-image-text__list-item"><span class="blue">(A)</span> Столешница</li>
                             <li class="flex-image-text__list-item"><span class="blue">(B)</span> Рама стола</li>
                             <li class="flex-image-text__list-item"><span class="blue">(C)</span> Опора стола</li>
-                            <li class="flex-image-text__list-item"><span class="blue">(D)</span> Деревянный брусок</li>
+                            <li class="flex-image-text__list-item"><span class="blue">(D)</span> Деревянный брусок (не входит в комплект)</li>
                             <li class="flex-image-text__list-item"><span class="blue">(E)</span> Лоток для кабеля</li>
                         </ul>
                     </div>
@@ -631,7 +653,7 @@
                                         type="radio"
                                         id="form__radio_jade"
                                         name="switch"
-                                        value="FG-ED-55W цвет белый"
+                                        value="Стол FG-ED-55: столешница светлый бамбук и белый каркас"
                                         checked>
                                         <button class="button tech-specs__button button_buy" type="button" >КУПИТЬ</button>
                                     </form>
@@ -653,7 +675,7 @@
                                         type="radio"
                                         id="form__radio_jade"
                                         name="switch"
-                                        value="FG-ED-55B цвет чёрный"
+                                        value="Стол FG-ED-55: столешница светлый бамбук и чёрный каркас"
                                         checked>
                                         <button class="button tech-specs__button button_buy" type="button" >КУПИТЬ</button>
                                     </form>
@@ -792,14 +814,6 @@
                             <div class="flex-image-specs__cell">
                                 100 - 240 В
                             </div>
-                            <div class="flex-image-specs__cell flex-image-specs__cell_no-border">
-                                <a class="flex-image-specs__link"
-                                    href="https://staticprod.site.flexispot.com/dev/trantor/attachments/Q8-MANUAL.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    download>
-                                    Скачать инструкцию</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -844,6 +858,38 @@
                             <div class="flex-image-specs__cell">
                                 Есть
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title" id="manuals">Инструкции по сборке</h2>
+            <div class="flex-video-image flex-video-image_reverse flex-video-image_background-white">
+                <div class="flex-video-image__item">
+                    <img class="flex-video-image__image"
+                        src="images/manual/01.png"
+                        alt="Stylish and practical"
+                        title="Stylish and practical">
+                    </img>
+                    <a class="flex-video-image__link"
+                                    href="docs/fg-ed-55.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    download>
+                                    Скачать инструкцию по сборке</a>
+                </div>
+                <div class="flex-video-image__item">
+                    <div class="block-youtube flex-video-image__video">
+                        <div class="block-youtube__content">
+                            <iframe class="block-youtube__video"
+                                src="https://www.youtube.com/embed/tBOBE2jwgp4"
+                                width="560"
+                                height="315"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                                mute
+                                title="Видеоинструккция по сборке стола FoxGear LIFTISH">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -1147,9 +1193,9 @@
     <script src="scripts/menu-mobile.js"></script>
     <script src="scripts/back-to-top.js"></script>
     <script src="scripts/accordion.js"></script>
-    <script src="scripts/carousels.js"></script>
+    <script src="scripts/carousels.js?ver=2"></script>
     <script src="scripts/hero-single.js"></script>
-    <script src="scripts/popup.js"></script>
+    <script src="scripts/popup.js?ver=2"></script>
 
 
     <script>

@@ -31,6 +31,8 @@ $(document).ready(function() {
 
         $('.form__label').on('click', function() {
             const index = $(this).data('index');
+
+            if (index == undefined) return
             $carousel.trigger('to.owl.carousel', [index, 300]);
         });
     }

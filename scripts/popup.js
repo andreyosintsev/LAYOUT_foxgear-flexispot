@@ -167,26 +167,25 @@
 
         const inputProduct = popup.querySelector('.popup__form input[name="product"]');
         if (!inputProduct) return console.error('DOM: no element name=product found');
-    
+
         const popupProduct = popup.querySelector('.popup__product');
         if (!popupProduct) return console.error('DOM: no .popup__product element found');
 
         const product = (button && button.dataset.product) || '';
 
-        console.log(product);
         const specs = getSelectedSpecs(button && button.form) || '';
 
         const fullProduct = (product + ' '+ specs).trim();
 
         inputProduct.value = fullProduct;
-        popupProduct.innerHTML = `Модель: ${fullProduct}`; 
+        popupProduct.innerHTML = `${fullProduct}`;
     }
 
     function getSelectedSpecs(form) {
         return form
             ? Array.from(form.querySelectorAll('input[type="radio"]:checked'))
                 .map(radio => radio.value)
-                .join(' ')
+                .join(' и ')
             : '';
     }
 
