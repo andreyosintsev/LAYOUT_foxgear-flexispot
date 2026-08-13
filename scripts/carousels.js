@@ -43,8 +43,6 @@ $(document).ready(function() {
             loop: true,
             nav: false,
             dots: false,
-            animateIn: "fadeInLeft",
-            animateOut: "fadeOutLeft",
             pullDrag: true,
             autoWidth: true,
             autoHeight: false,
